@@ -1,3 +1,139 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  background: #282A36 !important;
+  max-width: 2000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Background color classes */
+
+.bg-gray{ background-color: #44475A;  }
+.bg-black{ background-color: #282A36; }
+.bg-white{ background-color: #F8F8F2; } 
+.bg-dark-blue{ background-color: #6272A4; }
+.bg-light-blue{ background-color: #8BE9FD; }
+.bg-dark-purple{ background-color: #BD93F9; }
+.bg-light-purple{ background-color: #FF79C6; }
+.bg-dark-red{ background-color: #FF5555; }
+.bg-light-red{ background-color: #FF6E6E; }
+.bg-dark-orange{ background-color: #FFB86C; }
+.bg-light-orange{ background-color: #FFD47E; }
+.bg-dark-green{ background-color: #50FA7B; }
+.bg-light-green{ background-color: #69FF94; }
+.bg-dark-cyan{ background-color: #8BE9FD; }
+.bg-light-cyan{ background-color: #A4FFFF; }
+.bg-dark-pink{ background-color: #FF79C6; } 
+.bg-light-pink{ background-color: #FF92D0; }
+.bg-dark-yellow{ background-color: #F1FA8C; }
+.bg-light-yellow{ background-color: #FFFFA5; }
+
+/* Text color classes */
+
+.text-gray{ color: #44475A;  }
+.text-black{ color: #282A36; }
+.text-white{ color: #F8F8F2 !important; }
+.text-dark-blue{ color: #6272A4; }
+.text-light-blue{ color: #8BE9FD; }
+.text-dark-purple{ color: #BD93F9; }
+.text-light-purple{ color: #FF79C6; }
+.text-dark-red{ color: #FF5555; }
+.text-light-red{ color: #FF6E6E; }
+.text-dark-orange{ color: #FFB86C; }
+.text-light-orange{ color: #FFD47E; }
+.text-dark-green{ color: #50FA7B; }
+.text-light-green{ color: #69FF94; }
+.text-dark-cyan{ color: #8BE9FD; }
+.text-light-cyan{ color: #A4FFFF; }
+.text-dark-pink{ color: #FF79C6; }
+.text-light-pink{ color: #FF92D0; }
+.text-dark-yellow{ color: #F1FA8C; }
+.text-light-yellow{ color: #FFFFA5; }
+
+.page {
+  position: relative;
+  box-sizing: border-box;
+  width: 90%;
+  font-family: cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #fff;
+  background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  line-height: 1.4rem;
+  padding: 1.5rem 0.5rem 0.3rem 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page::before,
+.page::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.page::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.page::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.page:hover::before,
+.page:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.margin {
+  position: absolute;
+  border-left: 1px solid #d88;
+  height: 100%;
+  left: 3.3rem;
+  top: 0;
+}
+
+.page p {
+  margin: 0;
+  text-indent: 1rem;
+  padding-bottom: 1.2rem;
+  color: black;
+  line-height: 22px;
+}
+
+/* slide in animation */
+
+.slide-container {
+  overflow: hidden;
+}
+
+.slide {
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-1 {
+  transform: translateX(0);
+}
+
+.slide-2 {
+  transform: translateX(-100%);
+}
+
+.slide-3 {
+  transform: translateX(-100%);
+}
+
+.slide-buttons {
+  margin-top: 20px;
+}
